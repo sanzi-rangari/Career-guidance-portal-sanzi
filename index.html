@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Guidance Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Career Guidance Portal</h1>
+    <p>Discover the best career path for your interests and skills</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome!</h2>
+      <p>Answer a few quick questions to find your ideal career path.</p>
+    </section>
+
+    <section class="form-section">
+      <form id="careerForm">
+        <div class="form-group">
+          <label>1️⃣ What is your favorite subject?</label>
+          <select id="subject">
+            <option value="science">Science</option>
+            <option value="math">Mathematics</option>
+            <option value="arts">Arts</option>
+            <option value="commerce">Commerce</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>2️⃣ What kind of work do you enjoy?</label>
+          <select id="interest">
+            <option value="research">Research & Experiments</option>
+            <option value="creative">Creative & Design</option>
+            <option value="business">Business & Management</option>
+            <option value="technology">Technology & Coding</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>3️⃣ How do you prefer to work?</label>
+          <select id="workStyle">
+            <option value="team">In a team</option>
+            <option value="alone">Individually</option>
+            <option value="field">On-field</option>
+            <option value="office">In an office</option>
+          </select>
+        </div>
+
+        <button type="button" onclick="getCareer()">Get Career Suggestion</button>
+      </form>
+    </section>
+
+    <section class="result">
+      <h2>Your Suggested Career</h2>
+      <p id="careerOutput">Fill out the form to see your result!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Career Guidance Portal | Built by You</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
